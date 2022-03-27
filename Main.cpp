@@ -4,9 +4,11 @@
 using namespace std;
 using namespace ariel;
 
+// prog that present a carpet store and the costumer need to choose their dream carpet
 int main(){
-    int row = -1, col = -1;
-    char char1 = ';', char2 = ';';
+    int row = -1, col = -1; // defult value for start;
+    char char1 = ';', char2 = ';'; // defult value for start;
+    // carpet store
     cout << "Hello and welcome to our carpet market" << endl;
     cout << "plese enter the size for your dream carpet" << endl;
     cout << "lines: " << endl;
@@ -19,7 +21,7 @@ int main(){
     cout << "symbol 2: " << endl; 
     cin >> char2;
 
-    try{
+    try{ 
         string carpet = mat(col, row, char1, char2);
         cout << "your dream carpet is ready!!!!" << endl;
         cout << carpet << endl;
